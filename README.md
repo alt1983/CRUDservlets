@@ -1,4 +1,4 @@
-# REST CRUD application for work with Posts based on Servlets with multi-layers (Servlet,Controller,Service,Dto,Mapper,Repository,Entity) and DB PostesSQL
+# REST CRUD application for work with Posts based on Servlets with multi-layers (Servlet,Controller,Service,Dto,Mapper,Repository,Entity) and DB PostgresSQL
 
 ## Application starts on port 8080
 
@@ -19,6 +19,6 @@ DELETE http://localhost:8080/api/posts/N
 
 ## Tests
 - There are tests with Mockito и JUnit usage
-- Thare will be integration tests with Testcontainer usage soon
+- There will be integration tests with Testcontainer usage soon
 - There will be Docker-image for integration tests soon
 
