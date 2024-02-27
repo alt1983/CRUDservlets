@@ -19,6 +19,7 @@ DELETE http://localhost:8080/api/posts/N
 
 ## Tests
 - There are tests with Mockito и JUnit usage
+- Tests with Postman video https://cloud.mail.ru/public/yebt/nV1Nvjpq6
 - There will be integration tests with Testcontainer usage soon
 - There will be Docker-image for integration tests soon
 
