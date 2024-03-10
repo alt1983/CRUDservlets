@@ -3,10 +3,11 @@ package com.aston.servlet;
 import com.aston.dto.Dto;
 import com.aston.service.PostService;
 import com.aston.controller.PostController;
+import jakarta.servlet.http.*;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+//import javax.servlet.http.HttpServlet;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author
@@ -26,13 +27,6 @@ public class MainServlet extends HttpServlet {
     postService = new PostService(dto);
     controller = new PostController(postService);
   }
-
-  /**
-   * Adding element to AdvancedArrayList
-   * boolean add(T e)
-   * @param req - accepts requests GET, POST, DELETE, PUT
-   * @return resp - returns data or some response code
-   */
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) {

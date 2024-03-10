@@ -30,6 +30,8 @@ public class SummaryRepository {
 
     public SummaryRepository() {
         summaries = Collections.synchronizedList(new ArrayList());
+        summaries.add(new Summary(1000l,"summary",1000l,true));
+
         try {
             Class.forName(DRIVER);
             c = DriverManager
@@ -50,6 +52,7 @@ public class SummaryRepository {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     public List<Summary> getSummaries() {

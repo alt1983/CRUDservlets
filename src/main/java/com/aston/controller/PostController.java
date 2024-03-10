@@ -3,7 +3,8 @@ package com.aston.controller;
 import com.aston.dto.PostDto;
 import com.aston.service.PostService;
 import com.google.gson.Gson;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.*;
+//import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Reader;
 

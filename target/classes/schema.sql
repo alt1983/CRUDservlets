@@ -22,3 +22,9 @@ CREATE TABLE crud.SUMMARIES(
                            active       BOOLEAN NOT NULL DEFAULT TRUE,
                            FOREIGN KEY (postid) REFERENCES crud.POSTS(id)
 );
+
+INSERT INTO crud.AUTHORS(name,active) VALUES ('Author1',true);
+
+INSERT INTO crud.POSTS(authorid,content, active) VALUES (1,'Text12',true);
+
+INSERT INTO crud.SUMMARIES(postid,summary, active) VALUES (1,'Summary1',true);

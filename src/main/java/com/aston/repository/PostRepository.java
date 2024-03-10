@@ -28,6 +28,7 @@ public class PostRepository {
 
     public PostRepository() {
         posts = Collections.synchronizedList(new ArrayList());
+        posts.add(new Post(1000l,1000l,"content",true));
         try {
             Class.forName(DRIVER);
             c = DriverManager
@@ -47,6 +48,7 @@ public class PostRepository {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -70,6 +72,7 @@ public class PostRepository {
     public Post save(Post post) {
 
         Post newPost = new Post(post.getId(), post.getAuthor(), post.getContent(), post.getActive());
+
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUERY)) {
             preparedStatement.setLong(1, newPost.getAuthor());
@@ -81,6 +84,7 @@ public class PostRepository {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         posts.add(newPost);
         return newPost;
     }

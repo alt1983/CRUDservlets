@@ -29,6 +29,8 @@ public class AuthorRepository {
 
     public AuthorRepository() {
         authors = Collections.synchronizedList(new ArrayList());
+        authors.add(new Author(1000l,"name",true));
+
         try {
             Class.forName(DRIVER);
             c = DriverManager
@@ -48,6 +50,7 @@ public class AuthorRepository {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     public List<Author> getAuthors() {

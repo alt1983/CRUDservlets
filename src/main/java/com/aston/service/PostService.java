@@ -2,6 +2,7 @@ package com.aston.service;
 
 import com.aston.dto.Dto;
 import com.aston.dto.PostDto;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 

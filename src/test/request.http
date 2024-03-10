@@ -1,9 +1,8 @@
-GET http://localhost:8080/servletsSNAPSHOT/
+
 
 
 POST http://localhost:8080/api/posts
 Content-Type: application/json
-
 {
   "id": 0,
   "authorid": 1,

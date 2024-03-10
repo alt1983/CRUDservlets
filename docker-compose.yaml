@@ -1,10 +1,20 @@
 version: '2.2'
 
 services:
-  crud9:
-    image: 'crud9:latest9'
+  crud101:
+    image: 'crud101:latest101'
 
     build: ./
     ports:
       - '8080:8080'
 
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "pepper"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"

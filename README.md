@@ -19,6 +19,6 @@ DELETE http://localhost:8080/api/posts/N
 
 ## Tests
 - There are tests with Mockito и JUnit usage
-- Thare will be integration tests with Testcontainer usage soon
-- There will be Docker-image for integration tests soon
+- Thare are integration tests with Testcontainer usage
+- There is Docker-image "crud101:latest101" for integration tests
 

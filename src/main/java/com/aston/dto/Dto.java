@@ -7,6 +7,7 @@ import com.aston.mapper.Mapper;
 import com.aston.repository.AuthorRepository;
 import com.aston.repository.PostRepository;
 import com.aston.repository.SummaryRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ import java.util.List;
  * Data Transfer Object (DTO) layer transfers business objects from Repository to Service layer with Mapper usage
  */
 
-
+@Component
 public class Dto {
 
     private List<PostDto> postsDto;
